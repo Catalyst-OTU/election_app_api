@@ -16,7 +16,7 @@ from config.session import session,get_db_connection
 
 ROOT_DIR = os.path.dirname(os.path.relpath(__file__))
 api = FastAPI(docs_url="/api/docs")
-create_tables()
+#create_tables()
 origins = ["*"]
 api.add_middleware(
     CORSMiddleware,
