@@ -54,7 +54,7 @@ class Settings:
     REDIS_URL: str = "redis://redis:6379/0"
 
 
-    # INSTANCE_CONNECTION_NAME: str = os.getenv("INSTANCE_CONNECTION_NAME", None)
+    INSTANCE_CONNECTION_NAME: str = os.getenv("INSTANCE_CONNECTION_NAME", None)
     # UNIX_SOCKET: str = os.getenv("INSTANCE_UNIX_SOCKET", '/cloudsql/')
     # PROJECT_ID: str = os.getenv("PROJECT_ID")
     # BUCKET_NAME: str = os.getenv("BUCKET_NAME", "appraisal_app")
