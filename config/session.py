@@ -13,14 +13,14 @@ from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 SQLALCHEMY_DATABASE_URL = Settings.SQLALCHEMY_DATABASE_URL
 INSTANCE_CONNECTION_NAME = Settings.INSTANCE_CONNECTION_NAME
 
-ASYNC_DATABASE_URL = Settings.SQLALCHEMY_ASYNC_DATABASE_URL  # New async URL
-async_engine = create_async_engine(Settings.SQLALCHEMY_ASYNC_DATABASE_URL)
-async_session = sessionmaker(async_engine, expire_on_commit=False, class_=AsyncSession)
+# ASYNC_DATABASE_URL = Settings.SQLALCHEMY_ASYNC_DATABASE_URL  # New async URL
+# async_engine = create_async_engine(Settings.SQLALCHEMY_ASYNC_DATABASE_URL)
+# async_session = sessionmaker(async_engine, expire_on_commit=False, class_=AsyncSession)
 
-async def get_async_db():
-    """This manages the database session with async support and caching."""
-    async with async_session() as session:
-        yield session
+# async def get_async_db():
+#     """This manages the database session with async support and caching."""
+#     async with async_session() as session:
+#         yield session
 
 
 manager = ConnectionManager()

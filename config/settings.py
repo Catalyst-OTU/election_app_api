@@ -49,7 +49,7 @@ class Settings:
 
 
 
-    SQLALCHEMY_ASYNC_DATABASE_URL: str = os.getenv("ASYNC_DATABASE_URL", "postgresql://election_user:{POSTGRES_PASSWORD}@dpg-csqdj1d2ng1s7381n300-a/election_db_g19x")
+    SQLALCHEMY_ASYNC_DATABASE_URL = os.getenv("ASYNC_DATABASE_URL", "postgresql://election_user:{POSTGRES_PASSWORD}@dpg-csqdj1d2ng1s7381n300-a/election_db_g19x")
 
     REDIS_URL: str = "redis://redis:6379/0"
 
