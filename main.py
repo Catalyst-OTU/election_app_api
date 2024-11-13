@@ -11,7 +11,6 @@ from config.session import manager
 # import utils
 import os
 from apis.routers import router as api_router
-from config.session import session,get_db_connection
 
 
 ROOT_DIR = os.path.dirname(os.path.relpath(__file__))
