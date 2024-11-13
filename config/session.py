@@ -74,13 +74,13 @@ def get_db():
 
 
 
-# Function to get the database connection
-def get_db_connection():
-    conn = psycopg2.connect(
-        host=Settings.POSTGRES_SERVER,
-        port=Settings.POSTGRES_PORT,
-        dbname=Settings.POSTGRES_DB,
-        user=Settings.POSTGRES_USER,
-        password=Settings.POSTGRES_PASSWORD
-    )
-    return conn
+# # Function to get the database connection
+# def get_db_connection():
+#     conn = psycopg2.connect(
+#         host=Settings.POSTGRES_SERVER,
+#         port=Settings.POSTGRES_PORT,
+#         dbname=Settings.POSTGRES_DB,
+#         user=Settings.POSTGRES_USER,
+#         password=Settings.POSTGRES_PASSWORD
+#     )
+#     return conn
