@@ -53,30 +53,31 @@ class Settings:
 
     REDIS_URL: str = "redis://redis:6379/0"
 
-    INSTANCE_CONNECTION_NAME: str = os.getenv("INSTANCE_CONNECTION_NAME", None)
-    UNIX_SOCKET: str = os.getenv("INSTANCE_UNIX_SOCKET", '/cloudsql/')
-    PROJECT_ID: str = os.getenv("PROJECT_ID")
-    BUCKET_NAME: str = os.getenv("BUCKET_NAME", "appraisal_app")
-    FLYER_PATH: str = os.getenv("FLYER_PATH")
-    OUTLINE_PATH: str = os.getenv("OUTLINE_PATH")
-    SHOW_DOCS: str = os.getenv("SHOW_DOCS")
-    ALLOW_ORIGINS: str = os.getenv("ALLOW_ORIGINS", set_allow_origin)
-    SET_NEW_ORIGIN : list = ALLOW_ORIGINS.split(',')
-    SYSTEM_LOGO: str = os.getenv("SYSTEM_LOGO", "https://storage.googleapis.com/developers-bucket/developers-bucket/smart-conference-app/flyers/GI-KACE-Logo.jpeg")
+
+    # INSTANCE_CONNECTION_NAME: str = os.getenv("INSTANCE_CONNECTION_NAME", None)
+    # UNIX_SOCKET: str = os.getenv("INSTANCE_UNIX_SOCKET", '/cloudsql/')
+    # PROJECT_ID: str = os.getenv("PROJECT_ID")
+    # BUCKET_NAME: str = os.getenv("BUCKET_NAME", "appraisal_app")
+    # FLYER_PATH: str = os.getenv("FLYER_PATH")
+    # OUTLINE_PATH: str = os.getenv("OUTLINE_PATH")
+    # SHOW_DOCS: str = os.getenv("SHOW_DOCS")
+    # ALLOW_ORIGINS: str = os.getenv("ALLOW_ORIGINS", set_allow_origin)
+    # SET_NEW_ORIGIN : list = ALLOW_ORIGINS.split(',')
+    # SYSTEM_LOGO: str = os.getenv("SYSTEM_LOGO", "https://storage.googleapis.com/developers-bucket/developers-bucket/smart-conference-app/flyers/GI-KACE-Logo.jpeg")
 
 
-    FRONTEND_URL: str = os.getenv("FRONTEND_URL", "https://performance-appraisal.netlify.app")
+    # FRONTEND_URL: str = os.getenv("FRONTEND_URL", "https://performance-appraisal.netlify.app")
 
 
-    EMAIL_CODE_DURATION_IN_MINUTES: int = 15
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 2700
-    REFRESH_TOKEN_DURATION_IN_MINUTES: int =  2592000
-    REFRESH_TOKEN_REMEMBER_ME_DAYS: int = 5184000  # or any appropriate value
-    COOKIE_ACCESS_EXPIRE = 1800
-    COOKIE_REFRESH_EXPIRE = 2592000 # 1 Month
-    COOKIE_DOMAIN: str = os.getenv("COOKIE_DOMAIN", "gikace.dev")
-    PASSWORD_RESET_TOKEN_DURATION_IN_MINUTES: int = 15
-    ACCOUNT_VERIFICATION_TOKEN_DURATION_IN_MINUTES: int = 15
+    # EMAIL_CODE_DURATION_IN_MINUTES: int = 15
+    # ACCESS_TOKEN_EXPIRE_MINUTES: int = 2700
+    # REFRESH_TOKEN_DURATION_IN_MINUTES: int =  2592000
+    # REFRESH_TOKEN_REMEMBER_ME_DAYS: int = 5184000  # or any appropriate value
+    # COOKIE_ACCESS_EXPIRE = 1800
+    # COOKIE_REFRESH_EXPIRE = 2592000 # 1 Month
+    # COOKIE_DOMAIN: str = os.getenv("COOKIE_DOMAIN", "gikace.dev")
+    # PASSWORD_RESET_TOKEN_DURATION_IN_MINUTES: int = 15
+    # ACCOUNT_VERIFICATION_TOKEN_DURATION_IN_MINUTES: int = 15
     
 
     POOL_SIZE: int = 20
