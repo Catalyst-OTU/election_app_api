@@ -44,8 +44,8 @@ class Settings:
     POSTGRES_PORT: str = os.getenv("POSTGRES_PORT", 5432)
     POSTGRES_DB: str = os.getenv("POSTGRES_DB")
     
-    SQLALCHEMY_DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/{POSTGRES_DB}"
-    #SQLALCHEMY_DATABASE_URL = os.getenv("SQLALCHEMY_DATABASE_URL", "postgresql://appraisal_user:{POSTGRES_PASSWORD}@dpg-csqdj1d2ng1s7381n300-a/election_db_g19x")
+    #SQLALCHEMY_DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/{POSTGRES_DB}"
+    SQLALCHEMY_DATABASE_URL = os.getenv("SQLALCHEMY_DATABASE_URL", "postgresql://election_user:{POSTGRES_PASSWORD}@dpg-csqdj1d2ng1s7381n300-a/election_db_g19x")
 
 
 
